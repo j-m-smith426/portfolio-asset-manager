@@ -1,0 +1,46 @@
+.nav {
+  height: 100%;
+  width: 100%;
+
+  &__list {
+    display: grid;
+    height: 100%;
+    margin: 0;
+
+    padding: 0;
+
+    grid-template-rows: 30% 10% 10% 10% 30%;
+
+    li {
+      list-style: none;
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+      a {
+        width: 100%;
+      }
+      a:hover,
+      a:active {
+        background-color: orange;
+      }
+    }
+
+    a:link,
+    a:visited {
+      display: inline-block;
+      text-decoration: none;
+      color: black;
+      text-align: center;
+
+      padding: 1rem;
+    }
+  }
+
+  &__logo::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+}
