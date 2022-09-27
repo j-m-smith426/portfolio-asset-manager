@@ -2,13 +2,15 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
 import { Navbar } from "./components/Navbar";
-import classes from "./App.module.css";
+import "./App1.css";
+import Selector from "./components/selector/Selector";
 
 const App: React.FC = () => {
 	return (
 		<BrowserRouter>
-			<div className={classes.container}>
+			<div className="container">
 				<Navbar />
+				<Selector />
 			</div>
 		</BrowserRouter>
 	);
